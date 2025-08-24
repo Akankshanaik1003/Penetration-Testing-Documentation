@@ -1,0 +1,23 @@
+# Week-6: Penetration Testing Documentation  
+**Using Metasploit Framework on a Vulnerable Environment**
+
+---
+
+## 📌 Overview
+This documentation demonstrates the process of performing penetration testing using the **Metasploit Framework** against a vulnerable machine. The goal is to simulate a real-world exploitation scenario, identify vulnerabilities, exploit them, and perform basic post-exploitation activities.
+
+---
+
+## ⚙️ Environment Setup
+- **Attacker Machine**: Kali Linux (with Metasploit pre-installed)  
+- **Target Machine**: Vulnerable virtual machine (e.g., Windows XP SP3, Metasploitable2)  
+- Both systems should be configured in the same virtual network for communication.
+
+---
+
+## 🔍 Reconnaissance & Scanning
+### Step 1: Network Discovery  
+Use `nmap` to identify open ports and services.  
+
+```bash
+nmap -sS -sV <target_ip>
